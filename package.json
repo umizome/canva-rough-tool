@@ -1,0 +1,16 @@
+{
+  "name": "canva-rough-tool",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SNS動画ラフ（絵コンテ）生成ツール — Canva AIで縦型の絵コンテを作り、動画化メモを添える社内ツール",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "mock": "node --disable-warning=ExperimentalWarning server/index.js --mock",
+    "check-canva": "node --disable-warning=ExperimentalWarning server/check-canva.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js"
+  }
+}
